@@ -10,8 +10,9 @@ namespace Mood_Analyzer_Problem
     {
         static void Main(string[] args)
         {
-            MoodAnalyzer analyzemood = new MoodAnalyzer();
-
+            MoodAnalyzer analyzemood = new MoodAnalyzer("I Am Sad");
+            analyzemood.AnalyseMood();
+            Console.ReadLine();
         }
     }
 }

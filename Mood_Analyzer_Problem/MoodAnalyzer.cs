@@ -8,22 +8,26 @@ namespace Mood_Analyzer_Problem
 {
     public class MoodAnalyzer
     {
-            string message;
-            public MoodAnalyzer(string message)
+        string message;
+        public MoodAnalyzer(string message)
+        {
+            this.message = message;
+        }
+        public string AnalyseMood()
+        {
+            try
             {
-                this.message = message;
-            }
-            public string AnalyseMood()
-            {
-                if (message.Contains("sad"))
+                if (message.Contains("Sad"))
                 {
-                    return "sad";
+                    return "Sad";
                 }
                 else
-                {
-                    return "happy";
-                }
+                    return "Happy";
+            }
+            catch (NullReferenceException)
+            {
+                return "Happy";
             }
         }
     }
-            
+}

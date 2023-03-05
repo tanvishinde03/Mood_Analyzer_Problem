@@ -10,9 +10,9 @@ namespace Mood_Analyzer_Problem
     {
         static void Main(string[] args)
         {
-
-
+            MoodAnalyzer analyzemood = new MoodAnalyzer();
 
         }
     }
 }
+
